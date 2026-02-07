@@ -1,16 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>index.html</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,7 +55,7 @@
         </p>
 
         <p class="hero-sub muted">
-          In 2026, when customers search for a business and don’t find a professional website, they don’t wait — they choose a competitor who looks more established.
+          When customers don’t find a professional website, they choose a competitor who looks more established.
         </p>
 
         <p class="hero-sub">
@@ -96,7 +85,6 @@
   <!-- TRUST -->
   <section class="section trust">
     <div class="section-inner">
-
       <h2>Built for Local Businesses That Depend on Trust</h2>
 
       <p>
@@ -114,54 +102,6 @@
       <p class="section-note">
         If customers search for you on Google, your website matters more than ever.
       </p>
-
-    </div>
-  </section>
-
-  <!-- PROBLEM -->
-  <section class="section problem">
-    <div class="section-inner">
-
-      <h2>The Hidden Cost of Not Having a Website</h2>
-
-      <ul class="problem-list">
-        <li>Customers can’t quickly understand your services</li>
-        <li>You lose credibility before the first call</li>
-        <li>Competitors with weaker service but better websites win</li>
-        <li>Your business looks smaller and less reliable</li>
-      </ul>
-
-      <p class="emphasis">Your website is your digital storefront.</p>
-
-      <p>
-        If it’s missing or outdated, you’re quietly losing customers every day.
-      </p>
-
-    </div>
-  </section>
-
-  <!-- SOLUTION -->
-  <section class="section solution">
-    <div class="section-inner">
-
-      <h2>Websites Built to Convert — Not Just Look Good</h2>
-
-      <p>
-        These websites are designed with one goal: turn visitors into customers.
-      </p>
-
-      <ul class="solution-list">
-        <li>Mobile-first design</li>
-        <li>Fast loading speeds</li>
-        <li>Clear service sections</li>
-        <li>Strong calls to action</li>
-        <li>Clean structure for local SEO</li>
-      </ul>
-
-      <p class="emphasis">
-        No clutter. No unnecessary features. Just clarity and results.
-      </p>
-
     </div>
   </section>
 
@@ -196,7 +136,6 @@
   <!-- ABOUT -->
   <section class="section about">
     <div class="section-inner">
-
       <h2>About</h2>
 
       <p>My name is Adarsh.</p>
@@ -208,7 +147,6 @@
       <p>
         Nothing moves forward until the design feels right.
       </p>
-
     </div>
   </section>
 
@@ -217,45 +155,41 @@
     <div class="section-inner">
 
       <h2>Get Your Free Homepage Preview</h2>
-
       <p>No sales pressure. No upfront payment. No obligation.</p>
 
       <form 
-  class="lead-form"
-  name="lead"
-  method="POST"
-  action="/.netlify/functions/sendEmail"
->
-  <input type="hidden" name="form-name" value="lead">
-  <input type="hidden" name="bot-field">
+        class="lead-form"
+        name="lead"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/.netlify/functions/sendEmail"
+      >
+        <input type="hidden" name="form-name" value="lead">
+        <input type="hidden" name="bot-field">
 
-  <input type="text" name="business_name" placeholder="Business Name" required>
+        <input type="text" name="business_name" placeholder="Business Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
 
-  <input type="email" name="email" placeholder="Email Address" required>
+        <input 
+          type="text" 
+          name="instagram" 
+          placeholder="Instagram Username (Optional)"
+        >
+        <small>For faster contact via Instagram DM</small>
 
-  <input type="text" name="business_type" placeholder="Type of Business" required>
+        <input type="text" name="business_type" placeholder="Type of Business" required>
 
-  <input 
-    type="text" 
-    name="instagram" 
-    placeholder="Instagram Username (Optional)"
-  >
-  <small>For faster contact via Instagram DM</small>
+        <textarea name="services" placeholder="What services do you offer?"></textarea>
 
-  <textarea name="services" placeholder="What services do you offer?"></textarea>
-
-  <button type="submit">Apply for a Free Homepage Preview</button>
+        <button type="submit">Apply for a Free Homepage Preview</button>
       </form>
-      <small class="form-helper">
-  We’ll only use this to reach out about your preview.
-      </small>
+
       <p class="form-note">
         This isn’t about selling a website. It’s about proving the design works first.
       </p>
 
       <div class="contact-footer">
-
-        </name>Contact</name>
         <a href="mailto:adarsh.signal@gmail.com" class="contact-email">
           📩 adarsh.signal@gmail.com
         </a>
@@ -267,7 +201,6 @@
         >
           Follow on Instagram
         </a>
-
       </div>
 
     </div>
@@ -275,10 +208,6 @@
 
   <!-- JS -->
   <script src="script.js"></script>
-</body>
-</html>
-    <script  src="./script.js"></script>
 
-  </body>
-  
-</html>
+</body>
+          </html>
