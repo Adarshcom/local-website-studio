@@ -224,29 +224,19 @@
   class="lead-form"
   name="lead"
   method="POST"
-  action="/success.html"
   data-netlify="true"
   data-netlify-honeypot="bot-field"
-  netlify
+  action="/.netlify/functions/sendEmail"
 >
   <input type="hidden" name="form-name" value="lead">
   <input type="hidden" name="bot-field">
 
   <input type="text" name="business_name" placeholder="Business Name" required>
-
-<input type="email" name="email" placeholder="Email Address" required>
-
-<input 
-  type="text" 
-  name="instagram" 
-  placeholder="Instagram username
-   (Optional)" 
-  pattern="^[A-Za-z0-9._]{1,30}$"
->
-<small>For faster contact via Instagram DM</small>
-<input type="text" name="business_type" placeholder="Type of Business" required>
-
-<textarea name="services" placeholder="What services do you offer?"></textarea>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="text" name="business_type" placeholder="Type of Business" required>
+  <input type="text" name="instagram" placeholder="Instagram Username (Optional)">
+        </name>faster Contact VIA Instagram</name>
+  <textarea name="services" placeholder="What services do you offer?"></textarea>
 
   <button type="submit">Apply for a Free Homepage Preview</button>
       </form>
